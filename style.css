@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGrayBHB: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 0.1px);
+    background-color: var(--VeryLightGrayBHB);
+}
+
+button {
+    border: solid 2px var(--VeryLightGrayBHB);
+    background-color: var(--VeryLightGrayBHB);
+    height: 40px;
+    width: 65%;
+    border-radius: 40px;
+ }
+
+img {
+    width: 100%;
+ }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 60%;
+}
+
+.sub-container:first-child {
+    background-color: var(--BrightOrange);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 18rem;
+    padding: 2.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.sub-container:first-child img {
+    width: 4rem;
+}
+
+.sub-container:first-child button {
+    color: var(--BrightOrange);
+    font-weight: 700;
+}
+
+.sub-container:first-child button:hover {
+    color: var(--VeryLightGrayBHB);
+    background-color: var(--BrightOrange
+    );
+    border: solid 2px var(--VeryLightGrayBHB);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+ }
+
+ .sub-container:first-child+ .sub-container {
+    background-color: var(--DarkCyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 18rem;
+    padding: 2.5rem;
+ }
+
+ .sub-container:first-child+ .sub-container img {
+    width: 4rem;
+ }
+
+ .sub-container:first-child+ .sub-container button {
+    color: var(--DarkCyan);
+    font-weight: 700;
+ }
+
+ .sub-container:first-child+ .sub-container button:hover {
+    color: var(--VeryLightGrayBHB);
+    background-color: var(--DarkCyan);
+    border: solid 2px var(--VeryLightGrayBHB);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+ }
+
+ .sub-container:last-child {
+    background-color: var(--VeryDarkCyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 18rem;
+    padding: 2.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+ }
+
+ .sub-container:last-child img {
+    width: 4rem;
+ }
+
+ .sub-container:last-child button {
+    color: var(--VeryDarkCyan);
+    font-weight: 700;
+ }
+
+ .sub-container:last-child button:hover {
+    color: var(--VeryLightGrayBHB);
+    background-color: var(--VeryDarkCyan);
+    border: solid 2px var(--VeryLightGrayBHB);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+ }
+
+ h1 {
+    color:var(--VeryLightGrayBHB);
+    text-transform: uppercase;
+    margin: 2rem 0 1.5rem 0;
+    font-family: "Big Shoulders Display",sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    
+ }
+
+ p {
+    color: var(--TransparentWhiteParagraphs);
+    margin-bottom: 4rem;
+    line-height: 1.4rem;
+    font-family: "Lexend Deca",sans-serif;
+    font-weight: 400;
+ }
+
+@media (max-width: 500px) {
+
+   body {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 10%;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      height: 100%;
+   }
+
+   .sub-container:first-child {
+      border-radius: 0.5rem 0.5rem 0 0 ;
+  }
+
+  .sub-container:last-child {
+   border-radius: 0 0 0.5rem 0.5rem;
+}
+   
+} 
+
+ 
